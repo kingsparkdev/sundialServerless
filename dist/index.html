@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 전람회</title>
+</head>
+<body>
+    <div id="map" style="width:40vw; height: 60vh;"></div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcfSrOC4KTgo5EQxMjhqF9GYM-a6F-l5o&callback=initMap&region=kr"></script>
+    <script>
+        function initMap() {
+          var seoul = { lat: 37.5642135 ,lng: 127.0016985 };
+          var map = new google.maps.Map(
+            document.getElementById('map'), {
+              zoom: 16,
+              center: seoul
+            });
+          
+        }
+      </script>
+</body>
+</html>
